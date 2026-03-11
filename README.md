@@ -1,27 +1,21 @@
-# Eşik Ayarlamaları
+# Threshold Adjustments
 
-## Veri setini indirin
+## Download the dataset
 
-Veri seti [buradan](https://d32aokrjazspmn.cloudfront.net/materials/ML_New_player.csv) erişilebilir. Aşağıdaki komutlarla indirelim ve `03-Threshold-Adjustments` dizinindeki `data` klasörüne kaydedelim:
+The dataset is available [here](https://d32aokrjazspmn.cloudfront.net/materials/ML_New_player.csv). Let's download it with the following commands and save it to the `data` folder in the `03-Threshold-Adjustments` directory:
 
 ```bash
 curl https://d32aokrjazspmn.cloudfront.net/materials/ML_New_player.csv > data/player_performances.csv
 ```
 
-## Veri seti
+## Dataset
 
-- Her gözlem bir oyuncuyu temsil eder
-- Her sütun performansın bir özelliğidir
-- Hedef `target_5y`, oyuncunun 5 yıldan az [0] veya 5 yıl ve daha fazla [1] profesyonel kariyere sahip olup olmadığını tanımlar.
+- Each observation represents a player
+- Each column is a feature of performance
+- The target `target_5y` defines whether the player has less than 5 years [0] or 5 years or more [1] of professional career experience.
 
-## Alıştırma
+## Exercise
 
-🎯 Bu alıştırmada, profesyonel bir basketbol takımının Veri Bilimcisisiniz.
+🎯 In this exercise, we are a Data Scientist for a professional basketball team.
 
-Antrenör, işe alım sürecinde ona yardım etmenizi istiyor. Minimum 5 yıl profesyonel olarak devam edecek oyuncuları tanımlamanız gerekiyor. Ancak hiç risk almak istemiyor ve size gönderdiğiniz herhangi bir oyuncunun gerçekten 5 yıl profesyonel olarak devam edeceğine dair %90 garanti istediği konusunda sizi uyarıyor.
-
-Alıştırmaya başlamak için `jupyter notebook`'ta `Threshold-Adjustments.ipynb` dosyasını açın ve talimatları takip edin.
-
-🚀 Sıra sizde!
-
-
+The coach wants us to help him with the recruitment process. We need to identify players who will remain professional for a minimum of 5 years. However, we don't want to take any risks and warn us that we want a 90% guarantee that any player we send them will actually remain professional for 5 years.
